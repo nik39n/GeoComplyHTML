@@ -1,0 +1,83 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background: url("https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b6817d95fc94c67bf48eaab_image-header.jpg") no-repeat ;
+}
+nav{
+    padding: 0 30px 0 30px;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+}
+.navigation_container{
+    min-width: 1170px;
+    height: 90px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    margin: 20px 0 20px 0;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+}
+.nav_link{
+    padding: 20px;
+}
+.nav_button{
+    display: flex;
+    align-items: center;
+    padding: 9px 15px;
+    border: 2px #fff solid;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+}
+.nav_button:hover{
+    transition: 200ms;
+    background-color: #fff;
+    color: #000;
+}
+.header_content{
+    font-family: Arial;
+    color: #fff;
+    min-width: 770px;
+    margin-top: calc(210px - 90px);
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.main_text{
+    font-size: 72px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.after_main{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.but_get{
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    background-color: #5ab963;
+    text-decoration: none;
+}
+.but_get:hover{
+    transition: 200ms;
+    background-color: #478f4e;
+}
+.features{}
