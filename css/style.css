@@ -6,10 +6,11 @@
     background: url("https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b6817d95fc94c67bf48eaab_image-header.jpg") no-repeat ;
 }
 nav{
-    padding: 0 30px 0 30px;
-    font-family: 'Libre Franklin', sans-serif;
     display: flex;
     justify-content: center;
+    padding: 0 30px 0 30px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
 }
 .navigation_container{
     width: 1170px;
@@ -344,6 +345,56 @@ footer>.container{
  }
 .nav_logo{
     margin-bottom: 15px;
+}
+@media screen and (max-width: 991px){
+    .slider>img{
+        width: 100%;
+    }
+
+    .nav_menu{
+        display: flex;
+    }
+    .svg_burg{
+        display: none;
+    }
+    .navigation_container{
+        max-width: 726px;
+    }
+    .container{
+        max-width: 726px;
+    }
+    nav{
+        padding: 0 30px 0 30px;
+    }
+    .header_content{
+        margin: 0;
+        padding: 210px 60px 120px 60px;
+    }
+    .main_text{
+        text-align: center;
+    }
+    .header{
+        background-size: cover;
+    }
+    .row_image{
+        max-width: 370px;
+    }
+    .row_image>img{
+        width: 100%;
+    }
+    .row{
+        align-items: flex-start;
+    }
+    .row_text_second{
+        margin-right: 50px;
+    }
+    .row_text_first{
+        margin-left: 50px;
+    }
+    .footer_column_fourth{
+        display: flex;
+        align-items: flex-end;
+    }
 }
 @media screen and (max-width: 991px) and (min-width: 768px){
     .slider>img{
