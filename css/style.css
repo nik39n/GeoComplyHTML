@@ -254,6 +254,7 @@ nav{
     font-weight: 600;
     color: #5ab963;
     font-family: 'Libre Franklin', sans-serif;
+    margin-bottom: 15px;
 
 }
 .about_get{
@@ -269,4 +270,67 @@ nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+footer{
+    padding: 120px 30px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+footer>.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_column{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+.footer_column_logo{
+    flex: 0.5;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+}
+.footer_column_first{
+    flex: 0.2;
+}
+.footer_column_second{
+    flex: 0.2;
+}
+.footer_column_third{
+    flex: 0.2;
+}
+.footer_column_fourth{
+    flex: 0.2;
+
+}
+.footer_link{
+    margin-bottom: 25px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+.footer_row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+
+}
+.footer_row_social{
+    height: 100%;
+}
+.footer_link_social{
+     margin-right: 15px;
+ }
+.nav_logo{
+    margin-bottom: 15px;
 }
