@@ -76,6 +76,8 @@ nav{
     color: #fff;
     background-color: #5ab963;
     text-decoration: none;
+    font-family: 'Libre Franklin', sans-serif;
+
 }
 .but_get:hover{
     transition: 200ms;
@@ -116,6 +118,8 @@ nav{
     font-size: 24px;
     font-weight: 800;
     color: #000;
+    font-family: 'Libre Franklin', sans-serif;
+
 }
 .icon{
     margin-bottom: 25px;
@@ -234,4 +238,35 @@ nav{
     font-weight: 600;
     font-family: 'Libre Franklin', sans-serif;
 
+}
+.get_started{
+    display: flex;
+    justify-content: center;
+    padding: 150px 30px;
+}
+.get_started>.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cta_left_top{
+    font-size: 16px;
+    font-weight: 600;
+    color: #5ab963;
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+.about_get{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #b3b3b3;
+}
+.cta_column{
+    flex: 1;
+}
+.cta_column_second{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
