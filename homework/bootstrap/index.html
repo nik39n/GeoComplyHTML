@@ -16,57 +16,64 @@
 </head>
 <body>
 <header class="header">
-    <nav>
-        <div class="navigation_container">
-            <div>
-                <a class="logo">
-                    <img src="../img/5b680f7ddc6fa8394a12fc7f_logo-spoon-white%20(1).svg" alt="logo">
-                </a>
-            </div>
-            <div class="burger">
-                <input type="checkbox" id="check-box">
-                <label for="check-box">Menu</label>
-                <svg class="svg_burg" viewBox="0 0 100 80" width="40" height="40"  style="
-        background-color: white">
-                    <rect width="100" height="20"></rect>
-                    <rect y="30" width="100" height="20"></rect>
-                    <rect y="60" width="100" height="20"></rect>
-                </svg>
-                <div class="nav_menu">
-                    <a href="#" class="nav_link">Features</a>
-                    <a href="#" class="nav_link">Premium</a>
-                    <a href="#" class="nav_link">Pricing</a>
-                    <a href="#" class="nav_link">About</a>
-                    <a href="#" class="nav_link">Sign in</a>
-                    <a href="#" class="nav_button">
-                        Get Started
-                    </a>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light bg-transparent  w-100 mb-5">
+        <div class="container d-flex justify-content-between">
+            <div class="navbar-brand " href="#"><img src="img/5b680f7ddc6fa8394a12fc7f_logo-spoon-white%20(1).svg" alt="logo"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" aria-current="page" href="#">Features</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="#">Premium</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link  text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="#">Sign in</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <button type="button" class="btn btn-outline-light p-2">Get Started</button>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    <div class="header_content">
-        <h1 class="main_text">Propel your business.</h1>
-        <p class="after_main">Propel comes with everything you need to get your business rolling.</p>
-        <a  href="#" class="but_get">Get Started</a>
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col text-center text-white  mt-5 mb-5">
+                <h1 class="main_text">Propel your business.</h1>
+                <p class="after_main">Propel comes with everything you need to get your business rolling.</p>
+                <button type="button" class="btn btn-success p-3 mb-5">Get Started</button>
+            </div>
+        </div>
     </div>
+
 </header>
 <section class="features">
     <div class="container">
-        <div class="h2_container"><span class="bold_h2">Promoting your business and services with <br>Propel:</span> A responsive, multi-page business template
-            <br>with everything you need propel your business. </div>
-        <div class="colection">
-            <div class="colection_item">
+        <div class="h2_container row"><span class="bold_h2 d-inline-block p-0">Promoting your business and services with  Propel:</span>A responsive, multi-page business template
+            <br>with everything you need propel your business.
+        </div>
+        <div class="row">
+            <div class="colection_item col-md-12 col-lg-4 col-xl-4 col-xxl-4">
                 <div class="icon"><img src="https://uploads-ssl.webflow.com/5b681be5dc6fa89a65131967/5b681bfb5b239d8246368808_icon-feature-01.svg" alt=""></div>
                 <h3>Pro ad constituto</h3>
                 <p>Ne usu illud albucius abhor reant, partiendo scriptorem mel ne.</p>
             </div>
-            <div class="colection_item">
+            <div class="colection_item col-md-12 col-lg-4 col-xl-4 col-xxl-4">
                 <div class="icon"><img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b6afec21ea16a4da87f29bd_icon-feature-02.svg" alt="icon2"></div>
                 <h3>Eam commodo</h3>
                 <p>Fuisset intellegat delicatissimi ex mea. Cu probo integre nec.</p>
             </div>
-            <div class="colection_item">
+            <div class="colection_item col-md-12 col-lg-4 col-xl-4 col-xxl-4">
                 <div class="icon"><img src="https://uploads-ssl.webflow.com/5b681be5dc6fa89a65131967/5b681c455b239d0903368830_icon-feature-03.svg" alt=""></div>
                 <h3>Reformidans eis</h3>
                 <p>Facer nostro causae ei sed. Vix ex quidam detraxit, vis ad nostro laoreet.</p>
@@ -75,11 +82,11 @@
     </div>
 </section>
 <section class="slider">
-    <img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b68266cf109cfb76fd95be9_image-slider-01.jpg" alt="">
+        <img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b68266cf109cfb76fd95be9_image-slider-01.jpg" alt="">
 </section>
 <section class="about">
     <div class="container">
-        <div class="text_block">
+        <div class="row justify-content-center text-center w-75">
             <div class="about_main"><span class="bold_h2">Illud decore voluptaria has at.</span> Hinc invenire atomorum no vel. Ut vis nullam blandit neglegentur, omittam perpetua voluptatum qui eu. Iusto laoreet suscipit vis ad, ad ferri tempor duo. </div>
             <a href="#" class="green_small_text">More About Us</a>
         </div>
@@ -87,10 +94,10 @@
     </div>
 </section>
 <section class="premium">
-    <div class="container">
-        <div class="row first_row">
-            <div class="row_image"><img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b683ebb5fc94c7452490bd2_image-row-01.jpg" alt=""></div>
-            <div class="row_text row_text_first">
+    <div class="container ">
+        <div class="row mb-5">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 row_image"><img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b683ebb5fc94c7452490bd2_image-row-01.jpg" alt=""></div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 row_text row_text_first">
                 <div class="about_premium about_premium_first">
                     <span class="bold_h2">Ex tempor euismod sapientem ouis lexor pro. </span>
                     Ad vix dicta iudico singulis, ius ex mollis veritus.
@@ -98,9 +105,9 @@
                 <p>Possit tritani consectetuer eu his, nusquam minimum ut per, eu eos ocurreret splendide hendrerit. Dicant placerat democritum eos id, sit mollis invidunt mediocritatem ei, ne fuisset dolores periculis sed.</p>
             </div>
         </div>
-        <div class="row second_row">
-            <div class="row_image"><img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b6838dff109cf4aa0d96f64_image-row-02.jpg" alt=""></div>
-            <div class="row_text row_text_second">
+        <div class="row justify-content-end">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 row_image d-flex justify-content-end"><img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b6838dff109cf4aa0d96f64_image-row-02.jpg" alt=""></div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 row_text row_text_second">
                 <div class="about_premium about_premium_second">
                     <span class="bold_h2">Te elit antiopam vix zril recusabo ut pri.</span>
                     Quas suscipit ad mea verear vivendo tincidunt.
@@ -108,7 +115,7 @@
                 <p>Pri cu dico labores officiis, odio principes complectitur ad sea. Sea id doctus forensibus, nec lorem vocent aliquam eu. Aliquid definitiones id cum, ad meliore perpetua referrentur sed. Quas suscipit ad mea verear vivendo tincidunt.</p>
             </div>
         </div>
-        <div class="third_row">
+        <div class="row third_row text-center">
             <div class="main_text">Wanna know more about the Premium deal?</div>
             <a href="#" class="green_small_text">See the full range of Premium</a>
         </div>
@@ -116,39 +123,43 @@
     </div>
 </section>
 <section class="get_started">
-    <div class="container">
-        <div class="cta_column">
-            <div class="cta_left_top">Party On —</div>
-            <div class="about_get">
-                <div class="bold_h2">Quas suscipit ad mea.</div>
-                Pri cu dico labores officiis odio principes complectitur ad sea.
+    <div class="container w-100 d-flex justify-content-center">
+        <div class="row w-100">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="cta_left_top">Party On —</div>
+                <div class="about_get">
+                    <div class="bold_h2">Quas suscipit ad mea.</div>
+                    Pri cu dico labores officiis odio principes complectitur ad sea.
+                </div>
             </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 cta_column_second"><button type="button" class="btn btn-success p-3">Get Started</button></div>
         </div>
-        <div class="cta_column cta_column_second"><a href="" class="but_get">Get started</a></div>
     </div>
 </section>
 <footer>
-    <div class="container">
-        <div class="footer_column footer_column_logo">
-            <div class="nav_logo"><img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b680f7ddc6fa8394a12fc7f_logo-spoon-white.svg" alt="footer_logo"></div>
-            <div class="nav_text">© 2018 Spoon Inc, All rights reserved.</div>
-        </div>
-        <div class="footercol">
-            <div class="footer_column footer_column_first">
-                <div class="footer_row"><a href="" class="footer_link">Features</a><a href="" class="footer_link">Premium</a><a
-                        href="" class="footer_link">Pricing</a></div>
+    <div class="container w-100">
+        <div class="row w-100 d-flex flex-row justify-content-around">
+            <div class="col-lg-6 col-md-12  footer_column_logo">
+                <div class="nav_logo"><img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b680f7ddc6fa8394a12fc7f_logo-spoon-white.svg" alt="footer_logo"></div>
+                <div class="nav_text">© 2018 Spoon Inc, All rights reserved.</div>
             </div>
-            <div class="footer_column footer_column_second">
-                <div class="footer_row"><a href="" class="footer_link">About</a><a href="" class="footer_link">Blog</a><a
-                        href="" class="footer_link">Contact</a></div>
-            </div>
-            <div class="footer_column footer_column_third">
-                <div class="footer_row"><a href="" class="footer_link">Image License Info</a><a href="" class="footer_link">Powered by Webflow</a></div>
-            </div>
-            <div class="footer_column footer_column_fourth">
-                <div class="footer_row_social"><a href="" class="footer_link footer_link_social"><img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b68459df109cf0cf0d97867_icon-facebook.svg" alt=""></a><a href="" class="footer_link footer_link_social"><img
-                        src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b684641659acabed7c8b74d_icon-twitter.svg" alt=""></a><a
-                        href="" class="footer_link footer_link_social"><img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b6846535b239d7ba536b158_icon-instagram.svg" alt=""></a></div>
+            <div class="col-lg-6 col-md-12 footercol">
+                <div class="footer_column footer_column_first">
+                    <div class="footer_row"><a href="" class="footer_link">Features</a><a href="" class="footer_link">Premium</a><a
+                            href="" class="footer_link">Pricing</a></div>
+                </div>
+                <div class="footer_column footer_column_second">
+                    <div class="footer_row"><a href="" class="footer_link">About</a><a href="" class="footer_link">Blog</a><a
+                            href="" class="footer_link">Contact</a></div>
+                </div>
+                <div class="footer_column footer_column_third">
+                    <div class="footer_row"><a href="" class="footer_link">Image License Info</a><a href="" class="footer_link">Powered by Webflow</a></div>
+                </div>
+                <div class="footer_column footer_column_fourth">
+                    <div class="footer_row_social"><a href="" class="footer_link footer_link_social"><img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b68459df109cf0cf0d97867_icon-facebook.svg" alt=""></a><a href="" class="footer_link footer_link_social"><img
+                            src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b684641659acabed7c8b74d_icon-twitter.svg" alt=""></a><a
+                            href="" class="footer_link footer_link_social"><img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b6846535b239d7ba536b158_icon-instagram.svg" alt=""></a></div>
+                </div>
             </div>
         </div>
     </div>
