@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51e33e02-3d37-4379-817b-b5dd1199b72e" name="Changes" comment="newone">
-      <change afterPath="$PROJECT_DIR$/homework/bootstrap/img/5b680f7ddc6fa8394a12fc7f_logo-spoon-white (1).svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/bootstrap/img/5b6817d95fc94c67bf48eaab_image-header-p-130x130q80.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homework/bootstrap/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/homework/bootstrap/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/bootstrap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/homework/bootstrap/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homework/htmlcss/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/homework/htmlcss/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +71,7 @@
       <workItem from="1639512761698" duration="5989000" />
       <workItem from="1639554071092" duration="33287000" />
       <workItem from="1639723722328" duration="4477000" />
-      <workItem from="1639750283626" duration="12118000" />
+      <workItem from="1639750283626" duration="13047000" />
     </task>
     <task id="LOCAL-00001" summary="final">
       <created>1639751091073</created>
@@ -97,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639829032973</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="newone">
+      <created>1639842059682</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639842059682</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

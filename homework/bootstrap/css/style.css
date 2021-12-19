@@ -256,14 +256,12 @@ footer{
     .header{
         background-size: cover;
     }
-    .row_image{
-        max-width: 370px;
-    }
+
     .row_image>img{
         width: 100%;
     }
     .row{
-        align-items: flex-start;
+        align-items: center;
     }
     .footer_column_fourth{
         display: flex;
@@ -358,8 +356,11 @@ footer{
         margin-top: 15px;
         margin-bottom: 15px;
     }
-    .cta_column_second{
-        margin-right: auto;
+    .cta_column_second {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 30px;
     }
     footer>.container{
         display: flex;
@@ -449,8 +450,11 @@ footer{
         margin-top: 15px;
         margin-bottom: 15px;
     }
-    .cta_column_second{
-        margin-right: auto;
+    .cta_column_second {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 30px;
     }
     footer>.container{
         display: flex;
