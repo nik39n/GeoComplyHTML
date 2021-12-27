@@ -1,0 +1,40 @@
+version: '3'
+services:
+    nginx:
+        image: 'nginx:latest'
+        ports:
+            - 80:80
+        volumes:
+            - './:/var/www'
+            - './nginx/conf.d:/etc/nginx/conf.d'
+        networks:
+            - laravel_default
+    db:
+
+        image: mysql:5.7
+        restart: always
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_DATABASE: 'laravel_db'
+            MYSQL_ROOT_PASSWORD : 'root'
+        networks:
+            - laravel_default
+    app:
+        build:
+            context: .
+            dockerfile: .docker/Dokerfile
+        image: 'laravel'
+        volumes:
+            - ./:/var/www
+        networks:
+            - laravel_default
+
+
+
+
+networks:
+    laravel_default:
+        driver: bridge
+
+
