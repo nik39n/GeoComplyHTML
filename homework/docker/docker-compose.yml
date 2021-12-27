@@ -1,14 +1,14 @@
 version: "3"
 services:
   php:
-    image: php:7.4-fpm
+    build: './homework/docker/php'
     volumes:
       - './homework/docker/html:/var/www/html'
 
   nginx:
     image: nginx:latest
     ports:
-    - 80:80
+      - 80:80
     volumes:
       - './homework/docker/html:/var/www/html'
       - './homework/docker/nginx/conf.d:/etc/nginx/conf.d'
@@ -18,7 +18,13 @@ services:
       - 3306:3306
     environment:
       - MYSQL_ROOT_PASSWORD=root
+  composer:
+    image: composer:latest
 
+networks:
+  default:
+    external:
+      name: my-bridge-network
 
 
 
