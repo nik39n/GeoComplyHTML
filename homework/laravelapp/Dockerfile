@@ -22,9 +22,7 @@ RUN groupadd -g 1000 www
 RUN useradd -u 1000 -ms /bin/bash -g www www
 COPY . /var/www
 
-EXPOSE 8000
+EXPOSE 9000
 COPY test.sh /test.sh
 RUN  chmod +x /test.sh
 CMD ["/test.sh"]
-
-

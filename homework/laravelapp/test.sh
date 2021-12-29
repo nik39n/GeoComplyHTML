@@ -2,6 +2,4 @@
 
 composer create-project laravel/laravel
 
-cd laravel
-
-php artisan serve
+php-fpm
