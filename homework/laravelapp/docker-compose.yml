@@ -22,9 +22,8 @@ services:
             - laravel_default
     app:
         build:
-            context: .
-            dockerfile: .docker/Dokerfile
-        image: 'laravel'
+            dockerfile: Dockerfile
+        container_name: app
         volumes:
             - ./:/var/www
         networks:

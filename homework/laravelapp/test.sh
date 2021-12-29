@@ -1,2 +1,7 @@
-#!/bin/bash
-echo "Hello world"
+#!/bin/sh
+
+composer create-project laravel/laravel
+
+cd laravel
+
+php artisan serve
