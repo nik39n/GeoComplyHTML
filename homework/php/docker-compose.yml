@@ -3,15 +3,15 @@ services:
   php:
     image: php:7.2-fpm
     volumes:
-      - './homework/docker/html:/var/www/html'
+      - ./homework/html:/var/www/html
 
   nginx:
     image: nginx:latest
     ports:
       - 80:80
     volumes:
-      - './homework/docker/html:/var/www/html'
-      - './homework/docker/nginx/conf.d:/etc/nginx/conf.d'
+      - ./homework/html:/var/www/html
+      - ./homework/nginx/conf.d:/etc/nginx/conf.d
   mysql:
     image: mysql:8
     ports:
