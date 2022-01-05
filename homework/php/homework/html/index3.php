@@ -1,19 +1,19 @@
 <?php
 
-$FirstNumber = 3;
-$SecondNumber = 5;
-$ThirdNumber = 8;
+$firstNumber = 3;
+$secondNumber = 5;
+$thirdNumber = 8;
 
-echo "First number {$FirstNumber}";
+echo "First number {$firstNumber}";
 echo "</br>";
-echo "Second number {$SecondNumber}";
+echo "Second number {$secondNumber}";
 echo "</br>";
-echo "Third number {$ThirdNumber}";
+echo "Third number {$thirdNumber}";
 echo "</br>";
 
-$SumOfNumbers = $ThirdNumber + $SecondNumber + $FirstNumber;
+$sumOfNumbers = $thirdNumber + $secondNumber + $firstNumber;
 
-echo "Sum of Numbers is : {$SumOfNumbers}";
+echo "Sum of Numbers is : {$sumOfNumbers}";
 echo "</br>";
 
 $result = 2+6+2/5-1;

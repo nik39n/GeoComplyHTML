@@ -1,6 +1,6 @@
 <?php
-$TvName = "1+1";
-$ManufacturerAdress = "Moskovskiy st.";
-$CarColor = "red";
-$TemperatureWater = 100;
-$TelephoneModel = "Redmi 7a";
+$tvName = "1+1";
+$manufacturerAdress = "Moskovskiy st.";
+$carColor = "red";
+$temperatureWater = 100;
+$telephoneModel = "Redmi 7a";
