@@ -1,7 +1,7 @@
 version: "3"
 services:
   php:
-    image: php:7.2-fpm
+    build: homework/php/
     volumes:
       - ./homework/html:/var/www/html
 
