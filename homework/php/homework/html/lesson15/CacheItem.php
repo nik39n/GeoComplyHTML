@@ -6,6 +6,7 @@ class CacheItem implements CacheItemInterface
 {
     public $key;
     public $value;
+    public $isHit = false;
     public function __construct($key,$value){
         $this->key = $key;
         $this->value = $value;
@@ -32,7 +33,7 @@ class CacheItem implements CacheItemInterface
      */
     public function isHit()
     {
-        // TODO: Implement isHit() method.
+        return $this->isHit;
     }
 
     /**
@@ -40,7 +41,7 @@ class CacheItem implements CacheItemInterface
      */
     public function set($value)
     {
-        return $value;
+        return new static($this->key, serialize($value));
     }
 
     /**
