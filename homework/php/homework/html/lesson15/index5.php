@@ -15,7 +15,7 @@ $obj_example = new CacheItem("test1", "testValueItem");
 //print_r($items->getItem('testItem'));
 //echo '</pre>';
 //print_r($items->deleteItem('testItem'));
-print_r($items->getItems(['test1', 'testItem']));
+//print_r($items->getItems(['test1', 'testItem']));
 //print_r($items->clear());
 ////print_r($items->deleteItems(['testItem','test1']));
 //print_r($items->saveDeferred(new CacheItem("testItem3", "testValueItem3")));

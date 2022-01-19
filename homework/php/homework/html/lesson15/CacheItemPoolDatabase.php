@@ -36,9 +36,12 @@ class CacheItemPoolDatabase implements CacheItemPoolInterfaceItem
             $stmt = $this->db->prepare('SELECT * FROM things WHERE `obj_key` = ?');
             if($stmt->execute([$item])){
                 $result = $stmt->fetchALl();
+                if (empty($result)){
+                    return $res = [];
+                }
                 $res[$result[0]['obj_key']] = unserialize($result[0]['obj_value']);
             }else{
-                return false;
+                return $res = [];
             };
 
 
@@ -111,7 +114,13 @@ class CacheItemPoolDatabase implements CacheItemPoolInterfaceItem
         $key = $item->getKey();
         $value = serialize($item->get());
         $stmt = $this->db->prepare('INSERT INTO things (obj_key,obj_value) VALUES (?, ?)');
-        $stmt->execute([$key,$value]);
+        if ($stmt->execute([$key,$value])){
+            $item->isHit = true;
+            return true;
+        } else{
+            return false;
+        }
+
 
     }
 
