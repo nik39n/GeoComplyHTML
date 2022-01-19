@@ -2,14 +2,18 @@
 
 namespace Psr\Cache;
 
+
 use Illuminate\Filesystem\Cache;
 use PDO;
 
+
 require __DIR__ . "/../vendor/autoload.php";
+$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__. "/..");
+$dotenv->load();
 
 $items = new CacheItemPoolDatabase();
 $obj_example = new CacheItem("test1", "testValueItem");
-//$items->save($obj_example);
+$items->save($obj_example);
 //$items->save(new CacheItem("testItem", "testValueItem"));
 //echo '<pre>';
 //print_r($items->getItem('testItem'));
