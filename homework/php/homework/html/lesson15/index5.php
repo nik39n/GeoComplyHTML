@@ -11,7 +11,8 @@ require __DIR__ . "/../vendor/autoload.php";
 $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__. "/..");
 $dotenv->load();
 
-$items = new CacheItemPoolDatabase();
+$items = StaticFactory::factory('ItemDB');
+
 $obj_example = new CacheItem("test1", "testValueItem");
 $items->save($obj_example);
 //$items->save(new CacheItem("testItem", "testValueItem"));
@@ -26,3 +27,6 @@ $items->save($obj_example);
 //echo "<br>";
 //print_r($items->commit());
 //print_r($items->hasItem('testItem3'));
+
+$csv = new ExportCsv();
+$csv->write();

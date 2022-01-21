@@ -2,7 +2,7 @@
 namespace Psr\Cache;
 require __DIR__."/../vendor/autoload.php";
 
-$test2 = new CacheItemPoolSessionClass();
+$test2 = StaticFactory::factory('keyKeyValueSession');
 print_r($test2->save('test','Value test'));
 print_r($test2->save('test2','Value test'));
 echo "<br>";

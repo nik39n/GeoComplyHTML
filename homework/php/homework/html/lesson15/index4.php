@@ -6,7 +6,7 @@ use Illuminate\Filesystem\Cache;
 
 require __DIR__ . "/../vendor/autoload.php";
 
-$items = new CacheItemPoolCookie();
+$items = StaticFactory::factory('ItemCookie');
 $obj_example = new CacheItem("testItem", "testValueItem");
 $items->save($obj_example);
 echo "<br>";

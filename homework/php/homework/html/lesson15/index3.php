@@ -4,8 +4,9 @@ use Illuminate\Filesystem\Cache;
 
 require __DIR__."/../vendor/autoload.php";
 
-$item = new CacheItemPoolSession();
+$item = StaticFactory::factory('ItemSession');
 $obj_example = new CacheItem("testItem","testValueItem");
+
 $item->save($obj_example);
 echo "<br>";
 print_r($item->getItem('testItem'));
@@ -28,3 +29,4 @@ echo "<br>";
 print_r($item->commit());
 echo "<br>";
 print_r($_SESSION);
+

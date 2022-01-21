@@ -1,7 +1,8 @@
 <?php
 namespace Psr\Cache;
 require __DIR__."/../vendor/autoload.php";
-$test = new CacheItemPoolCookieClass();
+
+$test = StaticFactory::factory('KeyValueCookie');
 print_r($test->save('test','Value test'));
 print_r($test->save('test2','Value test'));
 echo "<br>";
