@@ -8,12 +8,8 @@ class CacheItemPoolDatabase implements CacheItemPoolInterfaceItem
     public $db;
     public $deferred = [];
     public function __construct(){
-        try {
-            $this->db = new PDO("mysql:host=".$_ENV['DB_HOST'].";port=3306;dbname=my_db_cache;charset=utf8",
-                $_ENV['DB_USER'], $_ENV['DB_PASS']);
-        } catch(\PDOException $e){
-            throw new \PDOException($e->getMessage(),$e->getCode());
-        }
+        $this->db = connectdb::getInstance()->getConnection();
+
     }
     public function getItem($key)
     {
