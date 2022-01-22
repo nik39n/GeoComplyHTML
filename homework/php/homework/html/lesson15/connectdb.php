@@ -5,11 +5,10 @@ use PDO;
 
 class connectdb
 {
-    private static $instance = null;
+    private static $instances = [];
     private $db;
 
 
-    // The db connection is established in the private constructor.
     private function __construct()
     {
 
@@ -19,12 +18,12 @@ class connectdb
 
     public static function getInstance()
     {
-        if(!self::$instance)
-        {
-            self::$instance = new self;
+        $cls = static::class;
+        if (!isset(self::$instances[$cls])) {
+            self::$instances[$cls] = new static();
         }
 
-        return self::$instance;
+        return self::$instances[$cls];
     }
 
     public function getConnection()

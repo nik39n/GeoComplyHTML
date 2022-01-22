@@ -13,7 +13,7 @@ $dotenv->load();
 
 $items = StaticFactory::factory('ItemDB');
 
-$obj_example = new CacheItem("test1", "testValueItem");
+$obj_example = new CacheItem("test100", "testValueItem");
 $items->save($obj_example);
 //$items->save(new CacheItem("testItem", "testValueItem"));
 echo '<pre>';

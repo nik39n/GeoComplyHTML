@@ -11,7 +11,8 @@ class CacheItemPoolSession implements CacheItemPoolInterfaceItem
     }
     public function getItem($key)
     {
-        return unserialize($_SESSION[$key]) ;
+        $value = unserialize($_SESSION[$key]);
+        return new CacheItem($key,$value);
     }
 
     /**

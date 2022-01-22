@@ -10,7 +10,8 @@ class CacheItemPoolCookie implements CacheItemPoolInterfaceItem
     }
     public function getItem($key)
     {
-        return unserialize($_COOKIE[$key]) ;
+        $value = unserialize($_COOKIE[$key]);
+        return new CacheItem($key,$value);
     }
 
     /**

@@ -3,20 +3,20 @@
 namespace Psr\Cache;
 use PDO;
 
-class CacheItemPoolDatabase implements CacheItemPoolInterfaceItem
+class CacheItemPoolDatabase implements CacheItemPoolInterfaceItem, Strategy
 {
     public $db;
     public $deferred = [];
     public function __construct(){
         $this->db = connectdb::getInstance()->getConnection();
-
     }
     public function getItem($key)
     {
         $stmt = $this->db->prepare('SELECT `obj_value` FROM things WHERE `obj_key` = ?');
         $stmt->execute([$key]);
         $res = $stmt->fetchALl();
-        return unserialize($res[0]['obj_value']);
+        $value = unserialize($res[0]['obj_value']);
+        return new CacheItem($key,$value);
     }
 
     /**
