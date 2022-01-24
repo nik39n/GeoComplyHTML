@@ -18,12 +18,14 @@
 18)SELECT * FROM customers WHERE Country IN ('Norway','France');
 19)SELECT * FROM products WHERE Price NOT BETWEEN 10 and 20 ;
 20)SELECT * FROM products WHERE ProductName  BETWEEN 'Geitost' and 'Pavlova' ;
-21)
-22)
-23)
-24)
-25)
-26)
+21)SELECT * FROM customers LEFT JOIN orders on customers.CustomerID = orders.CustomerID;
+22)SELECT COUNT(orders.CustomerID),City FROM Customers LEFT JOIN orders ON customers.CustomerID = orders.CustomerID GROUP BY City;
+23)SELECT SUM(p.Price),customers.CustomerName  FROM orders LEFT JOIN  Customers ON customers.CustomerID = orders.CustomerID
+   LEFT JOIN order_details od on orders.OrderID = od.OrderID
+   LEFT JOIN products p on p.ProductID = od.ProductID GROUP BY (orders.CustomerID);
+24)SELECT count(OrderDate),e.FirstName FROM orders inner JOIN employees e on orders.EmployeeID = e.EmployeeID GROUP BY (e.FirstName);
+25)SELECT COUNT(*), Country FROM customers GROUP BY Country ORDER BY COUNT(*) DESC ;
+26)SELECT COUNT(*), Country FROM customers GROUP BY Country ;
 27)
 28)
 29)
