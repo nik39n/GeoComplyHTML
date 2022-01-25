@@ -23,7 +23,10 @@
 23)SELECT SUM(p.Price),customers.CustomerName  FROM orders LEFT JOIN  Customers ON customers.CustomerID = orders.CustomerID
    LEFT JOIN order_details od on orders.OrderID = od.OrderID
    LEFT JOIN products p on p.ProductID = od.ProductID GROUP BY (orders.CustomerID);
-24)SELECT count(OrderDate),e.FirstName FROM orders inner JOIN employees e on orders.EmployeeID = e.EmployeeID GROUP BY (e.FirstName);
+24)SELECT OrderDate,AVG(Price),FirstName FROM orders
+       INNER JOIN employees e on orders.EmployeeID = e.EmployeeID
+       INNER JOIN order_details o on orders.OrderID = o.OrderID
+       INNER JOIN products p on o.ProductID = p.ProductID GROUP BY OrderDate,FirstName HAVING AVG(Price)>30 ORDER BY OrderDate;
 25)SELECT COUNT(*), Country FROM customers GROUP BY Country ORDER BY COUNT(*) DESC ;
 26)SELECT COUNT(*), Country FROM customers GROUP BY Country ;
 27)
